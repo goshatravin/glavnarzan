@@ -1,0 +1,145 @@
+@import "colors";
+@import "libs";
+
+// шрифты
+@font-face {
+	font-family: "Cochin";
+	src: url("/assets/fonts/Cochin.ttf") format("truetype");	
+}
+@font-face{
+    font-family: "Caveat";
+    src: url("/assets/fonts/Caveat-Regular.ttf") format("truetype");
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+// a,p,h1,h2,h3,h4,h5,span
+h1{
+    font-family: "Cochin";
+    font-size: 3.375rem;
+    color: $h1color;
+    font-variant: small-caps; 
+}
+
+h2{
+    font-family: "Caveat";
+    color: white;
+    font-size: 2.37rem;
+    font-variant: small-caps;
+}
+
+h3{
+    font-family: "Cochin";
+    font-size: 1.18rem;
+    text-transform: uppercase;
+    color: $gold;
+
+    
+}
+p{
+    font-family: "Cochin";
+}
+a{
+    text-decoration: none;
+    font-family: "Cochin";
+    font-variant: small-caps;
+    
+}
+
+
+// header_prenav
+
+
+.header__prenav{
+    background-color: $blue;
+ a{
+    color: white;
+ }
+}
+
+.prenav_items{
+    display: flex;
+    justify-content: flex-end;
+ .item{
+     padding: 1rem;
+ }
+}
+.item_map{
+    padding: 1rem;
+}
+
+// header_nav
+
+.header__nav{
+    background-color: $white;
+}
+
+.nav_menu ul{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+ li{
+     list-style-type: none;
+ }
+ a{
+     color: $black;
+     font-size: 1.31rem;
+     padding: 1.5rem 0;
+
+ }
+}
+.nav_logo{
+    padding: 1.5rem;
+    
+}
+
+// header_main
+
+.header__main{
+    background-image: url("/assets/img/glavnaya_bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    height: 500px;
+}
+.main_info{
+    text-align: center;
+    padding-top: 3rem ;
+}
+
+.main_reserv{
+    background-image: url("/assets/img/reserv_bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 12rem;
+
+
+ .reserv_item{
+     display: flex;
+     height: 140px;
+     align-items: center;
+     justify-content: space-around;
+     text-align: center;
+    
+ p{
+     color: $gold;
+     font-variant: small-caps;
+ }
+ input[type="submit"]{
+    box-shadow: 0 13px 25px rgba(46, 46, 46, 0.2);
+    background-color: $gold;
+    width: 21rem;
+    height: 3.6rem;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 1.3rem;
+    border: none;
+
+ }    
+ }
+}
