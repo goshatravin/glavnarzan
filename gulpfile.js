@@ -61,7 +61,7 @@ gulp.task('html', function() {
 
 
 gulp.task('scripts',function(){
-    return gulp.src(['node_modules/jquery/dist/jquery.min.js','node_modules/jquery.maskedinput/src/jquery.maskedinput.js'])
+    return gulp.src(['node_modules/jquery/dist/jquery.min.js','node_modules/jquery.maskedinput/src/jquery.maskedinput.js',])
       .pipe(gp.plumber())
       .pipe(gp.concat('libs.min.js'))
       .pipe(gulp.dest('build/assets/js'))

@@ -15,7 +15,7 @@
     box-sizing: border-box;
     padding: 0;
 }
-// a,p,h1,h2,h3,h4,h5,span
+// a,p,h1,h2,h3,h4,h5,span,li
 h1{
     font-family: "Cochin";
     font-size: 3.375rem;
@@ -47,6 +47,9 @@ a{
     font-variant: small-caps;
     
 }
+li{
+    list-style-type: none;
+}
 
 
 // header_prenav
@@ -54,9 +57,11 @@ a{
 
 .header__prenav{
     background-color: $blue;
+    height: 55px;
  a{
     color: white;
  }
+ 
 }
 
 .prenav_items{
@@ -64,10 +69,18 @@ a{
     justify-content: flex-end;
  .item{
      padding: 1rem;
+     display: flex;
+     align-items: center;
+ }
+ .item img{
+     padding-right: 0.2rem;
  }
 }
-.item_map{
-    padding: 1rem;
+.item_map img{
+    position: absolute;
+    padding-top: 1rem;
+    padding-left: 1.7rem;
+    
 }
 
 // header_nav
@@ -80,19 +93,30 @@ a{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  padding-top: 1rem;
+  
  li{
      list-style-type: none;
  }
  a{
      color: $black;
      font-size: 1.31rem;
-     padding: 1.5rem 0;
+     padding-top: 2rem;
+     padding-bottom: 0.5rem;
+    
 
+ }
+ a:hover{
+     border-bottom: 4px solid $gold;
+     transition: 0.2s all;
+     
  }
 }
 .nav_logo{
     padding: 1.5rem;
-    
+ img{
+     max-width: 6rem;
+ }
 }
 
 // header_main
@@ -112,10 +136,13 @@ a{
 
 .main_reserv{
     background-image: url("/assets/img/reserv_bg.png");
-    background-position: center;
-    background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 12rem;
+    background-size: cover;
+    background-position: center;
+    margin-top: 5rem;
+    border-bottom: 5px solid $gold;
+    position: relative;
+    
 
 
  .reserv_item{
@@ -124,6 +151,7 @@ a{
      align-items: center;
      justify-content: space-around;
      text-align: center;
+     
     
  p{
      color: $gold;
@@ -140,6 +168,222 @@ a{
     font-size: 1.3rem;
     border: none;
 
- }    
  }
+  
+ }
+}
+
+// cults
+
+.cults_blocks,
+.dosug_block{
+    margin-top: 12rem;
+    text-align: center;
+    margin-bottom: 3rem;
+ .uzor_right{
+     position: absolute;
+     right: 0;
+     top: 0;
+ }
+ .uzor_left{
+     position: absolute;
+     left: 0;
+     bottom: 0;
+ }
+ .row{
+     justify-content: center;
+     align-items: center;
+     width: 90%;
+     margin: 0 auto;
+     min-height: 550px;
+     position: relative;
+    /* Style for "Rectangle" */
+     box-shadow: 0 13px 25px rgba(46, 46, 46, 0.2);
+     border: 1px solid $orange;
+     background-color: $pinglight;
+
+
+ }
+ .cult_item{
+     width: 347px;
+     height: 451px;
+     margin: 1rem;
+     display: flex;
+     align-items: flex-end;
+     padding-bottom: 6rem;
+     justify-content: center;
+     padding-right: 0;
+     padding-left: 0;
+     
+ p{
+    color: #333333;
+    font-family: "Caveat";
+    font-size: 2rem;
+    font-variant: small-caps;
+    display: block;
+    background: $white_cult;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    transition: 0.5s all;
+ }
+ p:hover{
+     background: $gold;
+ }
+     
+ 
+ }
+ .cult_health{
+     background-image: url("/assets/img/cult_1.png");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+ .cult_food{
+     background-image: url("/assets/img/cult_2.png");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+
+ .cult_water{
+     background-image: url("/assets/img/cult_3.png");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+ 
+}
+
+// projivanie
+
+.how_to_live,
+.history_block{
+   
+    
+    
+ .row{
+    background-image: url("/assets/img/live_bg.png");
+    background-repeat: no-repeat;
+    border-bottom: 5px solid $gold;
+    padding-bottom: 7rem;
+    justify-content: center;
+    align-items: center;
+    
+ }
+ .live__text{
+     margin-left: 2rem;
+ }
+ .live_title{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding-bottom: 5rem;
+     padding-top: 2rem;
+ }
+ h3{
+    color: $black_live;
+    font-size: 2rem;
+    font-variant: small-caps;
+ }
+ p{
+    color: $black_live;
+    font-size: 1.26rem;
+    font-variant: small-caps;
+ }
+ input{
+    box-shadow: 0 13px 25px rgba(46, 46, 46, 0.2);
+    background-color: $gold;
+    width: 21rem;
+    height: 3.6rem;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 1.3rem;
+    border: none;
+    margin-top: 1rem;
+ }
+}
+
+
+// dosug
+
+
+.dosug_block{
+    .dosug_title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
+    h3{
+        color: $black_live;
+        font-size: 2rem;
+        font-variant: small-caps;
+     }
+    .row{
+        padding-bottom: 2rem;
+    }
+   
+}
+
+
+
+// history
+
+.history_block{
+    .row{
+        position: relative;
+    }
+  
+    .uzor_right{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .uzor_left{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    } 
+}
+
+// map
+
+.map_block{
+    padding-top: 5rem;
+    border-bottom: 8px solid $gold;
+}
+
+// footer
+
+footer{
+    background-color: $white;
+ .foo_nav_menu{
+     padding-bottom: 2rem;
+ }
+}
+.foo_nav_phone{
+ a{
+     border-bottom: 2px solid $black_live;
+ }
+}
+.footer_nav{
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    text-align: center;
+ a{
+    color: $black_live;
+    font-family: Cochin;
+    font-size: 1.31rem;
+    font-variant: small-caps;  
+ }
+ .copyright{
+     padding-top: 2rem;
+ }
+}
+.foo_nav_menu ul{
+    display: flex;
+    justify-content: space-around;
 }
