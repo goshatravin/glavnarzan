@@ -762,3 +762,182 @@ font-variant: small-caps;
     }
     
 }
+
+
+// СТИЛИ ДЛЯ НОМЕРА И ЦЕНЫ
+
+.first_room_block{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-image: url("/assets/img/blog_bg.png");
+    background-size: cover;
+    background-position: center;
+    border-bottom: 5px solid $gold;
+    box-shadow: 0 13px 25px rgba(46, 46, 46, 0.2);
+    .title_price{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5rem;
+        padding-top: 5rem;
+       
+    }
+    p{
+    color: #000000;
+    font-family: Cochin;
+    font-size: 1.31rem;
+    font-weight: 400;
+    line-height: 33.33px;
+    font-variant: small-caps;
+    }
+    .price_text{
+        display: flex;
+        align-items: center;
+        text-align: center;
+     img{
+         padding: 2rem;
+     }
+    }
+
+}
+// slider
+.slider-for-price{
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+    background-image: url(/assets/img/cults_bg.png);
+    background-color: #eee6d7;
+    .slider{
+    //    arrow next
+      .slick-next{
+        width: 81px;
+        height: 86px;
+        background-color: #ac8d59;
+        opacity: 0.8;
+        right: -54px;
+       
+      }
+      .slick-next:before{
+        content: ">";
+        font-size: 2rem;
+      }
+      .slick-prev{
+        width: 81px;
+        height: 86px;
+        background-color: #ac8d59;
+        opacity: 0.8;
+        z-index: 10;
+        left: -54px;
+      }
+      .slick-prev:before{
+          content: "<";
+          font-size: 2rem;
+      }
+      .row{
+          justify-content: center;
+          position: relative;
+      }
+    }
+    .slider-for img{
+       border: 1px solid #ac8d59;
+       background-color: #f7f5f0;
+       
+     
+    }
+    .slider-nav{
+        position: absolute;
+        top: -2rem;
+    }
+    .slider-nav img{
+       border: 1px solid #ac8d59;
+       background-color: #f7f5f0;
+       
+       
+    
+    
+    }
+}
+.room_desc{
+    .row{
+        justify-content: space-around;
+    }
+    h5{
+    color: #2b2b2b;
+    font-family: Cochin;
+    font-size: 1.625rem;
+    font-weight: 700;
+    font-variant: small-caps;
+    }
+    p{
+    color: #2b2b2b;
+    font-family: Cochin;
+    font-size: 1.18rem;
+    font-weight: 400;
+    line-height: 30.17px;
+    font-variant: small-caps;
+    }
+    .desc_title{
+        text-align: center;
+    }
+    .title_price_room_desc{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5rem;
+        padding-top: 7rem;
+       
+    }
+    .room_item_desc{
+        box-shadow: 0 13px 25px rgba(46, 46, 46, 0.2);
+        border: 1px solid #d4b47e;
+        background-color: #f2ece4; 
+        padding: 6rem 1rem;
+        position: relative;
+    
+    }
+    .desc_item_center{
+        text-align: center;
+    }
+    .desc_item img{
+      padding: 1.5rem 0;
+      text-align: center;
+    }
+    .uzor_right{
+        position: absolute;
+        top: 0;
+        right: 0;
+   
+    }
+    .uzor_left{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .push-top{
+        padding-top: 6rem;
+     h5{
+         padding-top: 2rem;
+     }
+    }
+    .box-input{
+        padding-top: 5rem;
+        margin-bottom: 3rem;
+    }
+}
+
+
+.second_room_block{
+    padding-top: 0;
+    
+    
+ .title_price{
+     margin-bottom: 1rem;
+     padding-top: 1.5rem;
+ }
+ 
+}
+.slider-for-price-second{
+    border-bottom: 5px solid $gold;
+ }
+
+
+//  СТИЛИ ДЛЯ ПИТАНИЯ
