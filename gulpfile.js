@@ -51,7 +51,7 @@ gulp.task('sass',function(){
 // html
 
 gulp.task('html', function() {
-    return gulp.src('source/html/index.html')
+    return gulp.src('source/html/*.html')
       .pipe(gp.htmlmin({ collapseWhitespace: true }))
       .pipe(gulp.dest('build'))
       .on('end', browserSync.reload);
