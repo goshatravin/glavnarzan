@@ -1083,3 +1083,82 @@ font-variant: small-caps;
       font-size: 2rem;
   }
 }
+
+
+// СТИЛИ ДЛЯ СТРАНИЦЫ ЛЕЧЕНИЕ
+
+.health_block{
+    background-image: url("/assets/img/blog_bg.png");
+    background-position: center;
+    padding-bottom: 5rem;
+    padding-top: 12rem;
+    border-bottom: 5px solid $gold;
+    text-align: center;
+ .fun_stuff{
+     padding: 1.5rem 0;
+ }
+ 
+}
+
+.health_desc{
+    background-image: url("/assets/img/cults_bg.png");
+    background-color: #eee6d7;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    border-bottom: 5px solid $gold;
+ .cults_blocks{
+     background-image: none;
+     padding-top: 7rem;
+ }
+ .row_first{
+     
+     text-align: center;
+     background-image: url("/assets/img/pattern1.png");
+     background-position: center;
+     box-shadow: 0 13px 25px rgba(46, 46, 46, 0.2);
+     background-color: #f2ece4;
+     padding: 3rem 0.5rem; 
+     p{
+        font-size: 1rem;
+    }
+ }
+ .row{
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .helath_item_detail{
+    max-width: 207px;
+    height: 156px;
+    box-shadow: 0 13px 25px rgba(46, 46, 46, 0.2);
+    cursor: pointer;
+    background-color: #f4efe7;
+    margin: 1rem 0.5rem;
+    display: flex;
+    align-items: center;
+ 
+ }
+ .active_health{
+  border: 1px solid #ac8d59;
+ }
+ .box_health_desc{
+     text-align: left;
+     
+ }
+ .box_health_desc_hide{
+     display: none;
+ }
+ li{
+    color: #333333;
+    font-family: Cochin;
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-variant: small-caps;
+    list-style-type: disc;
+    padding-bottom: 0.3rem;
+    }
+ .health_photos{
+     padding: 2rem 0;
+    
+ }
+}
