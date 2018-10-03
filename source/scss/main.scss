@@ -74,9 +74,9 @@ input[type="submit"]{
     font-variant: small-caps;
 }
 p{
-    color: #f2ede5;
-    font-family: "Painter";
-    font-size: 2.6rem;
+    color: #2b2b2b;
+    font-family: Cochin;
+    font-size: 1.56rem;
     font-weight: 400;
     font-variant: small-caps;
 }
@@ -428,7 +428,6 @@ p{
     border-bottom: 5px solid $gold;
      p{
     color: #333333;
-    font-family: "Painter";
     font-size: 1.4rem;
     font-weight: 400;
     font-variant: small-caps;
@@ -941,3 +940,146 @@ font-variant: small-caps;
 
 
 //  СТИЛИ ДЛЯ ПИТАНИЯ
+
+.food_desc{
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    background-image: url("/assets/img/cults_bg.png");
+    background-color: #eee6d7;
+    border-bottom: 5px solid $gold;
+ p{
+    color: #2b2b2b;
+    font-family: Cochin;
+    font-size: 1.43rem;
+    font-weight: 700;
+    font-variant: small-caps;  
+ }
+ img{
+     padding-bottom: 1rem;
+ }
+}
+
+.food_about{
+    background-color: $food_bg;
+    padding-bottom: 3rem;
+    border-bottom: 5px solid $gold;
+ .title_food{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 4rem 0;
+ }
+ .food_sepa{
+     padding-top: 3rem;
+     align-items: center;
+      img{
+          max-width: 100%;
+          padding-right: 0.5rem;
+      }
+      .sepa_box{
+          display: flex;
+          align-items: flex-start;
+          margin-bottom: 3rem;
+      }
+ }
+}
+.all_stuff_food{
+    background-image: url("/assets/img/cults_bg.png");
+    padding-top: 5rem ;
+    padding-bottom: 8rem;
+    border-bottom: 5px solid $gold;
+
+ .row{
+     justify-content: center;
+ }
+ .food__item{
+    background-image: url("/assets/img/food_photo.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+    background-color: #060206;
+    // opacity: 0.33;
+    -webkit-clip-path: polygon(20% 0, 80% 0, 100% 50%, 80% 100%, 20% 100%, 0 50%);
+    clip-path: polygon(20% 0, 80% 0, 100% 50%, 80% 100%, 20% 100%, 0 50%);
+    padding-left: 0;
+    padding-right: 0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+ p{
+    height: 25px;
+    color: #fffdfd;
+    font-family: Cochin;
+    font-size: 38px;
+    font-weight: 700;
+    font-variant: small-caps;
+    z-index: 10;
+ }
+ .food_over{
+     position: absolute;
+     top: 0;
+     left: 0;
+     background: #665e56;
+     height: 100%;
+     width: 100%;
+     opacity: 0.4;
+
+ }
+
+ }
+ .food__item_down{
+     margin-top: 11rem;
+     margin-left: -5rem;
+     margin-right: -5rem;
+ }
+ .cults_food{
+     padding-top: 5rem;
+ }
+}
+
+// СТИЛИ ДЛЯ ГАЛЕРЕИ
+
+.gallery_blocks{
+    background-image: url("/assets/img/cults_bg.png");
+    background-color: #eee6d7;
+    padding-bottom: 5rem;
+    border-bottom: 5px solid $gold;
+
+ .row{
+     justify-content: center;
+     padding-top: 6rem;
+ }
+ .title_gallery{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 2rem 0;
+ }
+ .slick-next{
+    width: 81px;
+    height: 86px;
+    background-color: #ac8d59;
+    opacity: 0.8;
+    right: -54px;
+   
+  }
+  .slick-next:before{
+    content: ">";
+    font-size: 2rem;
+  }
+  .slick-prev{
+    width: 81px;
+    height: 86px;
+    background-color: #ac8d59;
+    opacity: 0.8;
+    z-index: 10;
+    left: -54px;
+  }
+  .slick-prev:before{
+      content: "<";
+      font-size: 2rem;
+  }
+}
