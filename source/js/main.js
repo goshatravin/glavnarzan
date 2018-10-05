@@ -7,8 +7,6 @@ $('.slider-for').slick({
     asNavFor: '.slider-nav',
 
 
-
-
 });
 $('.slider-nav').slick({
     slidesToShow: 3,
@@ -19,7 +17,12 @@ $('.slider-nav').slick({
     focusOnSelect: true,
     adaptiveHeight: true,
 });
+// Slick слайдер для страницы История
 
+$('.history_slider_old').slick({
+    dots: true,
+    arrows: false
+});
 
 //   Переключение активного элемента на странице лечение
 
@@ -38,3 +41,4 @@ $(function () {
         $(this).toggleClass("active_health");
     })
 });
+
