@@ -23,6 +23,12 @@ $('.history_slider_old').slick({
     dots: true,
     arrows: false
 });
+// Slick слайдер для страницы Spa
+
+$('.slider_for_spa').slick({
+    dots: true,
+    arrows: true
+});
 
 //   Переключение активного элемента на странице лечение
 

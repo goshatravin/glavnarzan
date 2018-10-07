@@ -137,11 +137,12 @@ p{
  a{
     color: $black;
     transition: 0.5s;
+    
  }
  a:hover{
      border-bottom:4px solid $gold;
      transition: 0.5s;
-     padding-top: 4px;
+     
  }
  .nav_menu ul{
      display: flex;
@@ -1525,9 +1526,138 @@ background-color: #ac8d59;
 }
 
 
+// СТИЛИ ДЛЯ СТРАНИЦЫ SPA
 
+.spa_block{
+    background-color: #eee6d7;
+    background-image: url(/assets/img/cults_bg.png);
+    padding: 6rem 0;
+ .row{
+     justify-content: space-around;
+ }
+ .spa_block_one p{
+   
+    background-color: $gold;
+    text-align: center;
+    flex: 1;
+    padding: 1rem;
+   
+ }
+ .spa_block_one{
+   
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 
-
+   
+ }
+ .spa_photo_one{
+    background-image: url("/assets/img/spa_photo_one.png");
+ }
+ .spa_photo_two{
+    background-image: url("/assets/img/spa_photo_two.png");
+ }
+ .spa_block_two{
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     align-items: center;
+     padding: 1rem;
+ }
+ .spa_item{
+    box-shadow: 0 13px 25px rgba(46, 46, 46, 0.2);
+    background-color: #fffdfa;
+    height: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    
+ }
+}
+.spa-slider{
+    background-image: url("/assets/img/bg_spa.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 8rem 0;
+    
+ .row{
+     justify-content: center;
+ }
+}
+.slider_for_spa{
+    text-align: center;
+    border: 2px solid $gold;
+    .slick-next{
+        width: 81px;
+        height: 86px;
+        
+        opacity: 0.8;
+        right: -74px;
+       
+      }
+      .slick-next:before{
+       
+        font-size: 3rem;
+      }
+      .slick-prev{
+        width: 81px;
+        height: 86px;
+        
+        opacity: 0.8;
+        z-index: 10;
+        left: -74px;
+      }
+      .slick-prev:before{
+          
+          font-size: 3rem;
+      }
+}
+.text-spa{
+    padding: 8rem 2rem;
+    position: relative;
+ h5{
+     position: relative;
+    color: #f2ede5;
+    font-family: "Painter";
+    font-size: 1.81rem;
+    font-weight: 400;
+    font-variant: small-caps;
+    padding-bottom: 0.2rem;
+ }
+ p{
+     position: relative;
+    color: #ffffff;
+    font-family: Cochin;
+    font-size: 1.31rem;
+    font-weight: 700;
+    line-height: 19.82px;
+    font-variant: small-caps;
+    padding-top: 0.2rem;
+ }
+ hr{
+     max-width: 50%;
+     text-align: center;
+     margin: 0 auto;
+     border-color: white;
+     
+ }
+    
+}
+.text-spa-over{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: $gold;
+    opacity: 0.5;
+}
+.cults_spa{
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    
+}
 
 
 // СТИЛИ ДЛЯ МОБИЛЬНОЙ ВЕРСИИ
