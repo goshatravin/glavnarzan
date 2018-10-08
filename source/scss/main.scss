@@ -15,6 +15,7 @@
     src: url("/assets/fonts/nautiluspompilius.ttf") format("truetype");
 }
 
+
 *{
     margin: 0;
     box-sizing: border-box;
@@ -34,14 +35,14 @@ li{
 h1{
     color: $h1color;
     font-family: "Cochin";
-    font-size: 3.775rem;
+    font-size: 3rem;
     font-weight: 700;
     font-variant: small-caps;  
 }
 h2{
     color: #ffffff;
-    font-family: "Painter";
-    font-size: 2.375rem;
+    font-family: "Cochin";
+    font-size: 1.5rem;
     font-weight: 400;
     font-variant: small-caps;
 }
@@ -91,13 +92,16 @@ p{
 
 .header__prenav{
    background-color: $blue; //COLOR 
+   padding: 0.3rem;
  .item_map{
      text-align: center;
      margin-top: 1rem;
+     display: none;
     
  }
  a{
      color: white;
+     font-size: 0.9rem;
  }
  .prenav_items{
     display: flex;
@@ -120,14 +124,30 @@ p{
 }
 
 // Navigation  //
-
+.overlay-main{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #333;
+    overflow: auto;
+    z-index: 51;
+    opacity: 0.98;
+}
 .header__nav{
     background-color: $white; //COLOR
  .nav_logo{
      text-align: center;
      padding: 1rem;
+  a:hover{
+      border: none;
+  }
   img{
-      max-width: 17rem;
+      max-width: 10rem;
+      
+
   }
  
  }
@@ -137,11 +157,14 @@ p{
  a{
     color: $black;
     transition: 0.5s;
+   
+   
     
  }
  a:hover{
      border-bottom:4px solid $gold;
      transition: 0.5s;
+     margin-top: -4px;
      
  }
  .nav_menu ul{
@@ -156,10 +179,20 @@ p{
 // header-main
 
 .header__main{
-    background-image: url("/assets/img/glavnaya_bg.png");
+    background-image: url("/assets/img/main.jpg");
     background-size: cover;
     background-position: center;
-    height: 574px;
+    height: 474px;
+    position: relative;
+ .header_over{
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     top: 0;
+     left: 0;
+     opacity: 0.3;
+     background: black;
+ }
  .main_info{
      text-align: center;
      padding-top: 2rem;
@@ -174,7 +207,7 @@ p{
  .main_reserv{
      background-image: url("/assets/img/reserv_pattern.png");
      border-bottom: 5px solid $gold;
-     margin-top: 7rem;
+     margin-top: 2rem;
      position: relative;
   .reserv_item{
       display: flex;
@@ -250,17 +283,17 @@ p{
     transition: 1s;
  }
  .cult_health{
-     background-image: url("/assets/img/cult_1.png");
+     background-image: url("/assets/img/cult_zdorov.jpg");
      background-position: center;
      background-size: cover;
  }
  .cult_food{
-    background-image: url("/assets/img/cult_2.png");
+    background-image: url("/assets/img/cult_food.jpg");
     background-position: center;
     background-size: cover;
  }
  .cult_water{
-    background-image: url("/assets/img/cult_3.png");
+    background-image: url("/assets/img/cult_spa.jpg");
     background-position: center;
     background-size: cover;
  }
@@ -287,7 +320,7 @@ p{
  p{
     color:$black_live;
     font-family: "Cochin";
-    font-size: 1.56rem;
+    font-size: 1.2rem;
     font-variant: small-caps; 
  }
  img{
@@ -355,6 +388,7 @@ p{
 
 .dosug_block{
     text-align: center;
+    background-image: url("/assets/img/cults_bg.png");
     
     
     .row{
@@ -441,7 +475,7 @@ p{
     border-bottom: 5px solid $gold;
      p{
     color: #333333;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 400;
     font-variant: small-caps;
      }  
@@ -560,20 +594,25 @@ p{
 
 footer{
     text-align: center;
+    padding-top: 1rem;
 a{
 color: #2b2b2b;
 font-family: Cochin;
-font-size: 21px;
+font-size: 1rem;
 font-weight: 400;
 font-variant: small-caps;
 }
 .foo_nav_menu ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding: 1rem 0;
     margin-bottom: 1rem;
+    flex-wrap: wrap;
    
-
+ li{
+     padding-left: 0.5rem;
+     padding-right: 0.5rem;
+ }
 }
 .foo_nav_social img{
     padding: 0.5rem;
@@ -600,9 +639,8 @@ font-variant: small-caps;
 // КОД ДЛЯ СТРАНИЦЫ ДОСУГ
 
 .imperator_fun{
-    background-image: url("/assets/img/cults_bg.png");
+    background-image: url("/assets/img/flo.png");
     background-position: center;
-    background-color:#eee6d7;
     padding-top: 15rem;
     padding-bottom: 5rem;
     
@@ -639,13 +677,30 @@ font-variant: small-caps;
  .dosug_item{
     width: 100%;
     height: 386px;
-    background-image: url("/assets/img/cult_1.png");
-    background-size: cover;
-    background-position: center;
     margin-bottom: 3rem;
     padding-left: 0;
     padding-right: 0;
     
+ }
+ .dosug_item_1{
+    background-image: url("/assets/img/dosug_photo_1.jpg");
+    background-size: cover;
+    background-position: center;
+ }
+ .dosug_item_2{
+    background-image: url("/assets/img/dosug_photo_2.png");
+    background-size: cover;
+    background-position: center;
+ }
+ .dosug_item_3{
+    background-image: url("/assets/img/dosug_photo_3.jpg");
+    background-size: cover;
+    background-position: center;
+ }
+ .dosug_item_4{
+    background-image: url("/assets/img/dosug_photo_4.jpg");
+    background-size: cover;
+    background-position: center;
  }
  .dosug_item:hover .item_text{
     background-color: $gold;
@@ -713,8 +768,9 @@ font-variant: small-caps;
  }
 }
 .dosug_tour{
-    background-image: url("/assets/img/pattern2.png");
+    background-image: url("/assets/img/cults_bg.png");
     background-position: center;
+    background-color:#eee6d7;
     border-bottom: 5px solid $gold;
     .title_dosug{
         display: flex;
@@ -746,8 +802,7 @@ font-variant: small-caps;
     }
     // Элементы 
     .dosug_block_one{
-        background-image: url("/assets/img/cult_1.png");
-        height: 70%;
+        height: 60%;
         background-size: cover;
         background-position: center;
         display: flex;
@@ -756,29 +811,45 @@ font-variant: small-caps;
         transition: 0.5s;
         
     }
+    .dosug_ph_1{
+        background-image: url("/assets/img/dosug_t_1.jpg");
+    }
+    .dosug_ph_2{
+        background-image: url("/assets/img/dosug_t_2.jpg");
+    }
+    .dosug_ph_3{
+        background-image: url("/assets/img/dosug_t_3.jpg");
+    }
+    .dosug_ph_4{
+        background-image: url("/assets/img/dosug_t_4.jpg");
+    }
+    .dosug_ph_5{
+        background-image: url("/assets/img/dosug_t_5.jpg");
+    }
     .dosug_block_one:hover{
-        background-position: top;
-        transition: 3s linear;
+        
+        transition: 1s linear;
     }
     .dosug_block_two{
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 30%;
-        padding: 4rem 1rem;
+        height: 40%;
+        padding: 5rem 2rem;
     }
     span{
     color: #333333;
     font-family: "Cochin";
-    font-size: 1.18rem;
-    font-weight: 700;
+    font-size: 1.1rem;
+    font-weight: 400;
     line-height: 25px;
-    font-variant: small-caps;  
+    font-variant: small-caps; 
     }
     .block_one_text{
         text-align: center;
-        flex: 1;
+        padding: 0 1rem;
         background-color: $gold;
+        flex: 1;
     }
     
 }
@@ -829,11 +900,11 @@ font-variant: small-caps;
     .slider{
     //    arrow next
       .slick-next{
-        width: 81px;
-        height: 86px;
+        width: 5rem;
+        height: 5.3rem;
         background-color: #ac8d59;
         opacity: 0.8;
-        right: -54px;
+        right: -3.3rem;
        
       }
       .slick-next:before{
@@ -841,12 +912,12 @@ font-variant: small-caps;
         font-size: 2rem;
       }
       .slick-prev{
-        width: 81px;
-        height: 86px;
+        width: 5rem;
+        height: 5.3rem;
         background-color: #ac8d59;
         opacity: 0.8;
         z-index: 10;
-        left: -54px;
+        left: -3.3rem;
       }
       .slick-prev:before{
           content: "<";
@@ -1124,7 +1195,7 @@ font-variant: small-caps;
     background-image: url("/assets/img/blog_bg.png");
     background-position: center;
     padding-bottom: 5rem;
-    padding-top: 12rem;
+    padding-top: 14rem;
     border-bottom: 5px solid $gold;
     text-align: center;
  p{
@@ -1365,6 +1436,7 @@ background-color: #ac8d59;
 .relax_slider{
     background-color: #f3ede2;
     padding: 3rem;
+    border-bottom: 5px solid $gold;
  .row{
    justify-content: space-around;
    align-items: center;
@@ -1412,6 +1484,7 @@ background-color: #ac8d59;
     background-color: #eee6d7;
     background-image: url(/assets/img/cults_bg.png);
     padding-bottom: 4rem;
+    border-bottom: 4px solid $gold;
  .row{
     border: 1px solid #d4b47e;
      padding-top: 2rem;
@@ -1464,6 +1537,7 @@ background-color: #ac8d59;
     background-color: #f7f4ef;
     text-align: center;
     padding-bottom: 5rem;
+    border-bottom: 4px solid $gold;
  p{
      font-size: 1.56rem;
  }
@@ -1532,6 +1606,7 @@ background-color: #ac8d59;
     background-color: #eee6d7;
     background-image: url(/assets/img/cults_bg.png);
     padding: 6rem 0;
+    
  .row{
      justify-content: space-around;
  }
@@ -1656,6 +1731,7 @@ background-color: #ac8d59;
 .cults_spa{
     padding-top: 5rem;
     padding-bottom: 4rem;
+    border-bottom: 4px solid $gold;
     
 }
 
@@ -1679,12 +1755,25 @@ background-color: #ac8d59;
     // Menu
     .nav_menu ul{
         flex-direction: column;
+     li{
+         color: white;
+         font-size: 2rem;
+         padding: 0.1rem;
+     }
     }
     .header__prenav{
         display: none;
+        z-index: 100;
+        background: none;
+        
     }
     .header__nav{
         display: none;
+        z-index: 1000;
+        position: fixed;
+       background: none;
+       margin-top: 5rem;
+       height: 100vh;
     }
     // Header main
     .header__main{
@@ -1728,9 +1817,12 @@ background-color: #ac8d59;
    
     // Burger
     .burger{
-        position: absolute;
+        position: fixed;
         right: 0;
+        top: 0;
         padding: 12px;
+        display: block;
+        z-index: 120;
     }
 
 
@@ -1848,7 +1940,10 @@ background-color: #ac8d59;
     // footer
     .foo_nav_menu ul{
         flex-direction: column;
-     
+        
+     li{
+         font-size: 1.2rem;
+     }
     }
     .foo_nav_logo{
         margin: 2rem 0;
@@ -1856,5 +1951,178 @@ background-color: #ac8d59;
     .copyright{
         padding: 1rem 0
     }
-
+    // Стили для мобильной страницы досуг
+    .imperator_fun{
+        text-align: center;
+        .uzor_left{
+            max-width: 40%;
+        }
+        .uzor_right{
+            max-width: 40%;
+        } 
+        .title_dosug{
+            flex-direction: column;
+            margin-bottom: 2rem;
+        }
+    }
+    .dosug_tour{
+     .title_dosug{
+         flex-direction: column;
+         padding-top: 2rem;
+     }
+    }
+    // стили для мобильной страницы номера и цены
+    .first_room_block{
+     .title_price{
+         flex-direction: column;
+     }
+     .price_text img{
+         display: none;
+     }
+    }
+    .slider-for-price{
+        overflow: hidden;
+      .title_price_room_desc{
+          flex-direction: column;
+          padding-top: 1.5rem;
+          margin-bottom: 1.5rem;
+      }
+      .slider-nav{
+          display: none;
+      }
+      .slider{
+        //    arrow next
+          .slick-next{
+            width: 5rem;
+            height: 5.3rem;
+            background-color: $gold;
+            opacity: 1;
+            right: -2.3rem;
+           
+          }
+          .slick-next:before{
+            content: ">";
+            font-size: 2rem;
+            
+          }
+          .slick-prev{
+            width: 5rem;
+            height: 5.3rem;
+            background-color: $gold;
+            opacity: 1;
+            z-index: 10;
+           left: -2.3rem;
+          }
+          .slick-prev:before{
+              content: "<";
+              font-size: 2rem;
+             
+          }
+          .row{
+              justify-content: center;
+              position: relative;
+          }
+        }
+      
+    }
+    .room_desc{
+     
+     .room_item_desc{
+         border: none;
+     }
+     input{
+        width: 200px;
+     }
+     .desc_item{
+         text-align: center;
+     }
+     .desc_title{
+         padding-top: 0.5rem;
+     }
+    }
+    
+//  стили для мобильной страницы питание
+  .food_about{
+     .title_food{
+         flex-direction: column;
+     }
+     .food_sepa img{
+         padding-bottom: 1rem;
+     }
+  }
+  .all_stuff_food{
+   .food__item_down{
+       margin-top: 0;
+       margin-left: 0;
+       margin-right: 0;
+   }
+  }
+ 
+//   стили для мобильной страницы лечение 
+ .lechenie_cults{
+     padding-top: 5rem;
+ }
+ .relax_block{
+   .relax-info{
+       flex-direction: column;
+       padding: 3rem 0;
+   }
+   .lechenie_rum{
+       margin-top: 1rem;
+   }
+ }
+ .relax_slider{
+  .slider_relax_about{
+      margin-bottom: 4rem;
+    input{
+        width: 100px;
+        height: 20px;
+        font-size: 0.7rem;
+    }
+  }
+ }
+//  Стили для мобильной галереи
+ .gallery_blocks{
+   .slider-nav{
+       display: none;
+   }
+   .title_gallery{
+       flex-direction: column;
+   }
+ }
+//  стили для мобильной свадьбы
+ .wedding_block{
+    border-bottom: 4px solid $gold;
+   .title_wedding{
+       flex-direction: column;
+       text-align: center;
+   }  
+ }
+//  стили для мобильной кооперации
+ .cooperation_block{
+  
+  .row{
+      padding: 2rem 1rem;
+  }
+  .title_cooperation{
+      flex-direction: column;
+      text-align: center;
+  }  
+ }
+//  стили для мобильной кооперации 
+ .contact_block{
+     p{
+         font-size: 1.3rem;
+     }
+     img{
+         max-width: 40%;
+     }
+  .row{
+    padding: 2rem 1rem;
+  }
+ }
+//  стили для мобильной спа
+ .cults_spa{
+  padding-top: 5rem;
+ }
  }

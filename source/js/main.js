@@ -48,3 +48,15 @@ $(function () {
     })
 });
 
+//  Burger для мобильный устройств
+$(document).ready(function(){
+    $(".burger").click(function(){
+        $(".overlay-main").fadeToggle(200);
+        // $('.logo').fadeToggle(200);
+        $('.header__nav').fadeToggle(200);
+    });
+});
+$('.overlay-main').on('click', function(){
+    $(".overlay-main").fadeToggle(200);
+     $('.header__nav').fadeToggle(200);
+});
